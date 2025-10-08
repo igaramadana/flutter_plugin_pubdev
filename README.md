@@ -6,7 +6,7 @@
 **Kelas:** SIB 3C  
 **No Absen:** 15
 
-## **Repository:** [PMB_JS05 - Layout dan Navigasi](https://github.com/igaramadana/flutter_plugin_pubdev)
+## **Repository:** [PMB_JS05 - Manajemen Plugin](https://github.com/igaramadana/flutter_plugin_pubdev)
 
 ---
 
