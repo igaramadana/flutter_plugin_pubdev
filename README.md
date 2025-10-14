@@ -110,3 +110,45 @@ Container(
 ## Output yang dihasilkan dari praktikum
 
 ![Hasil run](images/2.png)
+
+---
+
+## Tugas Praktikum
+
+1. Selesaikan Praktikum tersebut, lalu dokumentasikan dan push ke repository Anda berupa screenshot hasil pekerjaan beserta penjelasannya di file README.md!
+   Jawab: https://github.com/igaramadana/flutter_plugin_pubdev
+
+2. Jelaskan maksud dari langkah 2 pada praktikum tersebut!
+   Jawab: Pada langkah ini, kita akan menambahkan **plugin `auto_size_text`** ke dalam proyek Flutter.  
+   Plugin ini digunakan untuk **menyesuaikan ukuran teks secara otomatis** agar sesuai dengan ruang yang tersedia di dalam widget.  
+   Dengan plugin ini, teks tidak akan terpotong meskipun panjangnya melebihi batas tampilan.
+
+3. Jelaskan maksud dari langkah 5 pada praktikum tersebut!
+   _Jawab:_ Pada langkah ini, kita akan menambahkan **variabel `text`** dan **parameter di constructor** pada widget kustom bernama `RedTextWidget`.  
+   Langkah ini bertujuan agar widget dapat **menerima data teks dari luar**, sehingga konten yang ditampilkan menjadi **dinamis dan mudah digunakan kembali (reusable)**.
+
+4. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
+   _Jawab:_ Pada langkah ini:
+
+- RedTextWidget digunakan untuk menampilkan teks dengan gaya khusus (misalnya warna merah).
+- Text digunakan untuk menampilkan teks standar tanpa modifikasi.
+  Keduanya ditempatkan di dalam Container dengan warna dan lebar berbeda agar mudah dibedakan pada tampilan aplikasi.
+
+5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto*size_text berdasarkan tautan pada dokumentasi ini !
+   \_Jawab:*
+   Plugin **`auto_size_text`** digunakan untuk **menyesuaikan ukuran teks secara otomatis** agar muat dalam batas ruang yang tersedia di widget.  
+   Plugin ini bekerja dengan cara **mengubah ukuran font** secara dinamis berdasarkan lebar atau tinggi kontainer tempat teks berada.
+   Contoh Dasar Penggunaan
+
+```dart
+AutoSizeText(
+  'Contoh teks panjang yang akan menyesuaikan ukuran secara otomatis.',
+  style: TextStyle(fontSize: 40),
+  maxLines: 2,
+  minFontSize: 14,
+  maxFontSize: 40,
+  overflow: TextOverflow.ellipsis,
+  textAlign: TextAlign.center,
+)
+
+```
